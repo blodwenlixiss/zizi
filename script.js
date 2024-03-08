@@ -19,7 +19,6 @@ button.addEventListener("mouseover", () => {
     ) + 1;
   button.style.left = i + "px";
   button.style.top = j + "px";
-  console.log("button clicked");
 });
 
 yesButton.addEventListener("click", () => {
