@@ -38,14 +38,12 @@ body {
 }
 .buttons {
   display: flex;
-  gap: 40px;
 }
 .buttons button {
   text-align: center;
   text-decoration: none;
   color: white;
-  position: absolute;
-  width: 150px;
+  width: 110px;
   background: rgb(185, 72, 72);
   padding: 10px;
   border: 0;
@@ -53,12 +51,34 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
+#noBtn {
+  position: absolute;
+}
 .buttons :hover {
   background: rgb(251, 193, 193);
 }
 button:nth-child(1) {
-  margin-left: -200px;
+  margin-left: 115px;
 }
-button:nth-child(2) {
-  margin-right: -200px;
+
+@media screen and (max-width: 500px) {
+  .main-container {
+    text-align: center;
+  }
+  button:nth-child(1) {
+    margin-left: -100px;
+  }
+  .buttons button {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    width: 100px;
+    background: rgb(185, 72, 72);
+    padding: 10px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
 }
